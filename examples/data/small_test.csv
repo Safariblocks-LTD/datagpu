@@ -1,0 +1,101 @@
+id,text,category,length,quality
+63,Introduction to supervised learning and its applications,supervised,56,0.6973971714600304
+32,Introduction to model training and its applications,model,51,0.5038539283538283
+26,A comprehensive guide to unsupervised learning,unsupervised,46,0.9691682367817389
+7,Best practices for supervised learning in production,supervised,52,0.8702104884559234
+57,How to implement model training efficiently,model,43,0.8132384740488848
+1,Common challenges in computer vision and solutions,computer,50,0.7772050316857999
+74,Understanding artificial intelligence with practical examples,artificial,61,0.6872208476599235
+31,Understanding machine learning with practical examples,machine,54,0.7474315847473447
+55,Introduction to deep learning and its applications,deep,50,0.9495362384468745
+41,Advanced techniques in computer vision for beginners,computer,52,0.941822463581637
+53,Best practices for model training in production,model,47,0.5980323114113053
+61,Best practices for machine learning in production,machine,49,0.6727414382124322
+18,A comprehensive guide to machine learning,machine,41,0.9492470392637002
+20,How to implement machine learning efficiently,machine,45,0.8604520315634396
+0,Best practices for model training in production,model,47,0.8431090812765796
+59,Best practices for unsupervised learning in production,unsupervised,54,0.8660028926038974
+38,Common challenges in deep learning and solutions,deep,48,0.5480337545224974
+10,How to implement artificial intelligence efficiently,artificial,52,0.7457526418734255
+45,The future of unsupervised learning in AI research,unsupervised,50,0.6177086420593779
+43,The future of unsupervised learning in AI research,unsupervised,50,0.5849071088352273
+36,Common challenges in deep learning and solutions,deep,48,0.5274412183960124
+14,Introduction to reinforcement learning and its applications,reinforcement,59,0.8531058604122559
+34,Introduction to machine learning and its applications,machine,53,0.7666752299926309
+16,How to implement transfer learning efficiently,transfer,46,0.6263995976342345
+62,The future of natural language processing in AI research,natural,56,0.7485673448653493
+37,Understanding artificial intelligence with practical examples,artificial,61,0.7587607948811192
+66,How to implement machine learning efficiently,machine,45,0.6205458044607846
+39,A comprehensive guide to deep learning,deep,38,0.6151758971944763
+22,How to implement reinforcement learning efficiently,reinforcement,51,0.7951676897443771
+60,Understanding artificial intelligence with practical examples,artificial,61,0.5161591504025018
+4,Introduction to neural networks and its applications,neural,52,0.64302005369635
+72,Introduction to computer vision and its applications,computer,52,0.8878138090288721
+23,Advanced techniques in transfer learning for beginners,transfer,54,0.7481848550061942
+12,Understanding reinforcement learning with practical examples,reinforcement,60,0.5095268213395685
+53,Best practices for model training in production,model,47,0.5980323114113053
+64,Best practices for reinforcement learning in production,reinforcement,55,0.5527192063322659
+64,Best practices for reinforcement learning in production,reinforcement,55,0.5527192063322659
+61,Best practices for machine learning in production,machine,49,0.6727414382124322
+50,Advanced techniques in data science for beginners,data,49,0.8567056769142275
+17,Common challenges in data science and solutions,data,47,0.7370732471253738
+71,Introduction to machine learning and its applications,machine,53,0.8205732789417783
+63,Introduction to supervised learning and its applications,supervised,56,0.6973971714600304
+45,The future of unsupervised learning in AI research,unsupervised,50,0.6177086420593779
+51,How to implement artificial intelligence efficiently,artificial,52,0.696319813415704
+9,Best practices for deep learning in production,deep,46,0.8322866143721277
+65,The future of machine learning in AI research,machine,45,0.6927763475462576
+11,Best practices for deep learning in production,deep,46,0.5404882470253985
+46,Advanced techniques in supervised learning for beginners,supervised,56,0.9680122708872212
+63,Introduction to supervised learning and its applications,supervised,56,0.6973971714600304
+70,How to implement model training efficiently,model,43,0.618830529047189
+54,Best practices for neural networks in production,neural,48,0.972078423146108
+69,Introduction to supervised learning and its applications,supervised,56,0.6261831229037804
+15,Introduction to artificial intelligence and its applications,artificial,60,0.8827633006416808
+27,Introduction to artificial intelligence and its applications,artificial,60,0.8497009227306769
+76,Introduction to unsupervised learning and its applications,unsupervised,58,0.5428274206891993
+2,The future of transfer learning in AI research,transfer,46,0.7691877705438539
+21,A comprehensive guide to deep learning,deep,38,0.6158942484189875
+17,Common challenges in data science and solutions,data,47,0.7370732471253738
+28,The future of reinforcement learning in AI research,reinforcement,51,0.8501648360091579
+68,Understanding machine learning with practical examples,machine,54,0.8429353211631637
+33,Best practices for supervised learning in production,supervised,52,0.5424301983997084
+18,A comprehensive guide to machine learning,machine,41,0.9492470392637002
+73,Best practices for transfer learning in production,transfer,50,0.7465771076044248
+16,How to implement transfer learning efficiently,transfer,46,0.6263995976342345
+3,The future of artificial intelligence in AI research,artificial,52,0.9738550159465027
+67,Common challenges in artificial intelligence and solutions,artificial,58,0.7532393971160308
+49,A comprehensive guide to unsupervised learning,unsupervised,46,0.5527714847321406
+30,Best practices for computer vision in production,computer,48,0.6978443993789241
+58,Introduction to transfer learning and its applications,transfer,54,0.7528415548264409
+32,Introduction to model training and its applications,model,51,0.5038539283538283
+19,Best practices for neural networks in production,neural,48,0.8230713375065271
+56,The future of machine learning in AI research,machine,45,0.6626020434685189
+6,Introduction to reinforcement learning and its applications,reinforcement,59,0.6769899635666472
+5,Understanding neural networks with practical examples,neural,53,0.6905038329932202
+61,Best practices for machine learning in production,machine,49,0.6727414382124322
+77,Introduction to computer vision and its applications,computer,52,0.5334884394093466
+51,How to implement artificial intelligence efficiently,artificial,52,0.696319813415704
+25,Introduction to reinforcement learning and its applications,reinforcement,59,0.6590677518454727
+29,Introduction to supervised learning and its applications,supervised,56,0.5766416061642443
+18,A comprehensive guide to machine learning,machine,41,0.9492470392637002
+55,Introduction to deep learning and its applications,deep,50,0.9495362384468745
+24,A comprehensive guide to neural networks,neural,40,0.901842670004396
+79,A comprehensive guide to reinforcement learning,reinforcement,47,0.9738256166057994
+42,Common challenges in transfer learning and solutions,transfer,52,0.7766795243394058
+44,Introduction to model training and its applications,model,51,0.8137880426628059
+29,Introduction to supervised learning and its applications,supervised,56,0.5766416061642443
+0,Best practices for model training in production,model,47,0.8431090812765796
+48,How to implement neural networks efficiently,neural,44,0.9297541245543115
+8,Understanding supervised learning with practical examples,supervised,57,0.5276019243021339
+76,Introduction to unsupervised learning and its applications,unsupervised,58,0.5428274206891993
+75,Introduction to unsupervised learning and its applications,unsupervised,58,0.6753621926067279
+35,Common challenges in model training and solutions,model,49,0.5686490753005686
+47,How to implement computer vision efficiently,computer,44,0.7181058036357689
+8,Understanding supervised learning with practical examples,supervised,57,0.5276019243021339
+40,Advanced techniques in deep learning for beginners,deep,50,0.7977165636996335
+13,How to implement artificial intelligence efficiently,artificial,52,0.6575734476641365
+17,Common challenges in data science and solutions,data,47,0.7370732471253738
+78,Understanding supervised learning with practical examples,supervised,57,0.5279486145696171
+52,Introduction to model training and its applications,model,51,0.6715947955282604
+76,Introduction to unsupervised learning and its applications,unsupervised,58,0.5428274206891993
