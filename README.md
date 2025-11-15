@@ -27,82 +27,157 @@ DataGPU compiles raw, messy datasets into training-ready binaries, turning 10k+ 
 
 ## Quick Start
 
-### Installation
+### Installation from PyPI
+
+Install the latest stable version directly from PyPI:
 
 ```bash
 pip install datagpu
 ```
 
-Or install from source:
+For production use, we recommend installing in a virtual environment:
+
+```bash
+# Create and activate virtual environment (recommended)
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
+# Install DataGPU
+pip install datagpu
+```
+
+### Verify Installation
+
+Check that DataGPU is installed correctly:
+
+```bash
+datagpu --version
+# Output: DataGPU version 0.1.0
+```
+
+### Install from Source (Development)
+
+For development or to get the latest features:
 
 ```bash
 git clone https://github.com/datagpu/datagpu.git
 cd datagpu
 
-# Create virtual environment
+# Create and activate virtual environment
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
-# Install package
-pip install -e .
+# Install in development mode with all dependencies
+pip install -e ".[dev]"
 ```
 
-### Basic Usage
+## Basic Usage
+
+### Compile a Dataset
+
+Process and optimize your dataset with a single command:
 
 ```bash
-# Compile a dataset
-datagpu compile data/train.csv --rank --dedupe --cache --out compiled/
+datagpu compile data/your_dataset.csv \
+  --rank \
+  --dedupe \
+  --cache \
+  --out compiled/
 ```
 
-Output:
+Example with sample data:
+
+```bash
+# First, download or generate sample data
+python examples/generate_sample_data.py
+
+# Process the sample data
+datagpu compile examples/data/small_test.csv --out /tmp/compiled --verbose
+```
+
+Example output:
 ```
 DataGPU v0.1.0
-Compiling: data/train.csv
+Compiling: examples/data/small_test.csv
+
+Loading data from examples/data/small_test.csv...
+Cleaning data...
+Deduplicating...
+Ranking by relevance...
+Saving to /tmp/compiled/data.parquet...
 
 Compilation complete!
 
-Rows processed       2,400,000
-Valid rows           2,367,840 (98.7%)
-Duplicates removed   297,600 (12.4%)
-Ranked samples       2,070,240
-Processing time      8.2s
-Output               compiled/data.parquet
-Manifest             compiled/manifest.yaml
+ Rows processed      100                          
+ Valid rows          100 (100.0%)                 
+ Duplicates removed  20 (20.0%)                   
+ Ranked samples      80                           
+ Processing time     0.1s                         
+ Output              /tmp/compiled/data.parquet  
+ Manifest            /tmp/compiled/manifest.yaml 
 
 Dataset version: v0.1.0
 ```
 
+### View Dataset Information
+
+Inspect compiled datasets:
+
+```bash
+datagpu info /tmp/compiled/manifest.yaml
+```
+
+### Cache Management
+
+List cached datasets:
+```bash
+datagpu cache-list
+```
+
+Clear cache:
+```bash
+datagpu cache-clear
+```
+
 ### Python API
 
+You can also use DataGPU programmatically:
+
 ```python
-from datagpu import load
-from datagpu.compiler import DataCompiler
+from datagpu import DataCompiler, load
 from datagpu.types import CompilationConfig, RankMethod
 
-# Compile a dataset
+# Configure the compilation
 config = CompilationConfig(
-    source_path="data/train.csv",
+    source_path="data/your_dataset.csv",
     output_path="compiled/",
-    dedupe=True,
-    rank=True,
+    dedupe=True,                    # Enable deduplication
+    rank=True,                      # Enable quality ranking
     rank_method=RankMethod.RELEVANCE,
-    rank_target="high quality instructions",
-    cache=True
+    rank_target="high quality examples",  # Target for relevance ranking
+    cache=True,                     # Enable caching
+    verbose=True                    # Show progress
 )
 
+# Create and run the compiler
 compiler = DataCompiler(config)
 output_path, manifest, stats = compiler.compile()
 
-# Load compiled dataset
+# Load the compiled dataset
 dataset = load("compiled/manifest.yaml")
 
-# Use with PyTorch
-for item in dataset:
-    print(item)
+# Use with PyTorch DataLoader
+from torch.utils.data import DataLoader
+dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
 
-# Convert to pandas/arrow
+# Or convert to pandas/arrow
 df = dataset.to_pandas()
 table = dataset.to_arrow()
+
+# Access compilation statistics
+print(f"Processed {stats.total_rows} rows")
+print(f"Removed {stats.duplicates_removed} duplicates")
+print(f"Processing time: {stats.processing_time:.2f}s")
 ```
 
 ## Architecture
