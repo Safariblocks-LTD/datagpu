@@ -60,7 +60,7 @@ datagpu --version
 For development or to get the latest features:
 
 ```bash
-git clone https://github.com/datagpu/datagpu.git
+git clone https://github.com/Jasiri-App/datagpu.git
 cd datagpu
 
 # Create and activate virtual environment
@@ -320,7 +320,7 @@ dataset.train_test_split(test_size=0.2)
 
 ```bash
 # Clone repository
-git clone https://github.com/datagpu/datagpu.git
+git clone https://github.com/Jasiri-App/datagpu.git
 cd datagpu
 
 # Install development dependencies
@@ -399,17 +399,18 @@ If you use DataGPU in your research, please cite:
 ```bibtex
 @software{datagpu2025,
   title = {DataGPU: Open-source data compiler for AI training datasets},
-  author = {DataGPU Contributors},
+  author = {Celestino Kariuki},
+  organization = {Safariblocks Ltd.},
   year = {2025},
-  url = {https://github.com/datagpu/datagpu}
+  url = {https://github.com/Jasiri-App/datagpu}
 }
 ```
 
 ## Support
 
-- Documentation: [GitHub README](https://github.com/datagpu/datagpu)
-- Issues: [GitHub Issues](https://github.com/datagpu/datagpu/issues)
-- Discussions: [GitHub Discussions](https://github.com/datagpu/datagpu/discussions)
+- Documentation: [GitHub README](https://github.com/Jasiri-App/datagpu)
+- Issues: [GitHub Issues](https://github.com/Jasiri-App/datagpu/issues)
+- Discussions: [GitHub Discussions](https://github.com/Jasiri-App/datagpu/discussions)
 
 ---
 
